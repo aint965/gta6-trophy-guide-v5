@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101f22">
+<title>Leonida Ledger — GTA VI Trophy Guide</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <a class="wordmark" href="./" aria-label="Leonida Ledger home"><span class="mark">LL</span><span>LEONIDA<br><b>LEDGER</b></span></a>
+  <div class="edition">FIELD GUIDE <span>·</span> PS5 / 55 TROPHIES</div>
+  <nav class="view-switch" aria-label="Guide views">
+    <button class="view-tab active" id="guide-tab" type="button" data-view="guide">Trophy log</button>
+    <button class="view-tab" id="roadmap-tab" type="button" data-view="roadmap">Roadmap</button>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" aria-label="Progress overview">
+    <div class="hero-copy">
+      <div class="eyebrow"><span class="live-dot"></span> LEONIDA, KEPT IN THE MARGINS</div>
+      <h1>Make every<br><em>moment count.</em></h1>
+      <p>A field notebook for the road to platinum. Log the story, keep an eye on the one uncertain missable, and sweep the rest at your pace.</p>
+      <div class="hero-actions">
+        <button class="button button-light" id="export" type="button"><span aria-hidden="true">↗</span> Export save</button>
+        <label class="button button-quiet import-button" for="import-file"><span aria-hidden="true">↙</span> Import save</label>
+        <input id="import-file" class="visually-hidden" type="file" accept="application/json,.json">
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="platinum-seal" aria-hidden="true"><span>✦</span><small>PLATINUM<br>BOUND</small></div>
+      <div class="completion"><div class="completion-top"><span>YOUR RUN</span><strong id="progress">0 <i>/ 55</i></strong></div><div class="progress-track"><span id="progress-fill"></span></div><div class="completion-foot"><span id="progress-percent">0% complete</span><span id="earned-count">0 earned</span></div></div>
+      <div class="grade-counts" id="grade-counts"></div>
+    </div>
+    <div class="hero-index">NO. 06 <span>—</span> COAST TO COAST</div>
+  </section>
+
+  <section class="guide-view" id="guide-view">
+    <div class="control-deck">
+      <div class="deck-heading"><div><span class="eyebrow">THE CHECKLIST</span><h2>Trophy log <small id="visible-count">55 entries</small></h2></div><div class="list-tools"><label class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Find a trophy" aria-label="Find a trophy"><kbd>/</kbd></label></div></div>
+      <div class="filter-row" role="group" aria-label="Filter trophies">
+        <button class="filter active" type="button" data-filter="all">All <span>55</span></button>
+        <button class="filter" type="button" data-filter="story">Story</button>
+        <button class="filter" type="button" data-filter="missable">Missable <span class="alert-count">1</span></button>
+        <button class="filter" type="button" data-filter="collectibles">Collectibles</button>
+        <button class="filter" type="button" data-filter="activities">Activities</button>
+        <button class="filter" type="button" data-filter="online">Online <span>0</span></button>
+        <span class="filter-spacer"></span>
+        <label class="spoiler-toggle"><input id="spoilers" type="checkbox" checked><span class="toggle-track"><i></i></span><span>Hide story spoilers</span></label>
+      </div>
+      <p class="metadata-note">28 PlayStation-hidden trophies in total per the competition list; per-trophy hidden flags were not supplied. Spoiler mode masks every unearned story trophy instead of guessing those flags.</p>
+    </div>
+
+    <div class="workspace">
+      <section class="trophy-list-panel" aria-label="Trophy checklist">
+        <div class="list-caption"><span>CHECKLIST</span><span id="list-sort">ROADMAP ORDER <b>↕</b></span></div>
+        <div id="rows" class="trophy-list" aria-live="polite"></div>
+        <div id="empty-list" class="empty-state" hidden><span class="empty-symbol">⌕</span><b>No trophies in this view.</b><span>Try another filter or search term.</span></div>
+        <div class="list-end"><span class="end-stamp">LL</span><span>55 entries · one platinum run</span></div>
+      </section>
+
+      <aside class="detail-panel" id="detail-panel" aria-label="Selected trophy guide">
+        <div id="detail"></div>
+      </aside>
+    </div>
+    <section class="next-up" aria-label="Next up">
+      <div class="next-icon">↗</div><div class="next-copy"><span class="eyebrow">NEXT UP · YOUR ROADMAP</span><p id="next-up">Keep following the main story; a milestone is waiting.</p></div><button id="next-button" type="button" class="text-button">Open guide <span>→</span></button>
+    </section>
+    <footer class="page-footer"><span>LEONIDA LEDGER <i>·</i> AN INDEPENDENT PLAYER FIELD GUIDE</span><span>OFFLINE BY DESIGN <i>·</i> PROGRESS STAYS ON THIS DEVICE</span></footer>
+  </section>
+
+  <section class="roadmap-view" id="roadmap-view" hidden>
+    <div class="roadmap-intro"><div><span class="eyebrow">THE LONG WAY ROUND</span><h2>Platinum roadmap</h2><p>One story run, a protected early-game check, then a calm cleanup loop. This order follows the source guide; the uncertain meditation stays called out.</p></div><div class="route-mark"><span>01</span><i>→</i><span>04</span><small>STORY / SWEEP / SIDE WORK / FINISH</small></div></div>
+    <div class="risk-banner"><span class="risk-flag">!</span><div><strong>Potential missable · verdict unknown</strong><p><b>Positive Mental Attitude:</b> PowerPyx reports a Chapter 1 meditation that becomes unavailable later, but says it is unconfirmed whether it is required. Do it when it appears, then continue; don’t treat the trophy as definitively missable.</p></div><button class="text-button" type="button" data-open-trophy="28">View trophy →</button></div>
+    <div id="roadmap-stages" class="roadmap-stages"></div>
+    <div class="roadmap-bottom"><div class="roadmap-note"><span class="note-icon">✦</span><div><b>No online trophies</b><p>The reviewed PowerPyx roadmap lists 55 offline trophies and zero online trophies. The online filter is here for completeness and returns an empty list.</p></div></div><div class="roadmap-note"><span class="note-icon">◷</span><div><b>Make a manual save at chapter boundaries</b><p>The source reports no mission replay. Keep a chapter-start / chapter-end save if you want a rewind point.</p></div></div></div>
+    <footer class="page-footer"><span>LEONIDA LEDGER <i>·</i> ROADMAP BASED ON THE SOURCES SHOWN</span><span>OFFLINE BY DESIGN <i>·</i> PROGRESS STAYS ON THIS DEVICE</span></footer>
+  </section>
+</main>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script type="module" src="app.js"></script>
+</body>
+</html>

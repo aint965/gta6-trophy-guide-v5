@@ -1,0 +1,6 @@
+[
+  {"file":"01-cover.jpg","path":"/","viewport":{"width":1280,"height":800},"view":"guide","trophy":"A Long Road"},
+  {"file":"02-guide.jpg","path":"/","viewport":{"width":1280,"height":800},"view":"guide","trophy":"Positive Mental Attitude"},
+  {"file":"03-roadmap.jpg","path":"/","viewport":{"width":1280,"height":800},"view":"roadmap"},
+  {"file":"04-spoilers.jpg","path":"/","viewport":{"width":1280,"height":800},"view":"guide","spoilers":"on"}
+]
